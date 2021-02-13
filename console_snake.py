@@ -25,9 +25,10 @@ elemX = [0 for i in range(100)]; elemY = [0 for i in range(100)]
 api = Api()
 
 def clear():
-	for i in ["cls", "clear"]:
-		os.system(i)
-		break
+	if os.getenv("OS") == "Windows_NT":
+		os.system("cls")
+	elif os.getenv("OS") in [None,"Linux"]
+		os.system("clear")
 
 def record(score: int):
 	file = read_file()
@@ -103,8 +104,12 @@ def board(width: int = 40, height: int = 20, pos_player_x: int = x, pos_player_y
 
 def button_move():	
 	global button_defult
-	while game_thread:
-		button_defult = m.getch()[0]
+	if os.getenv("OS") in ["Windows_NT","Linux"]:
+		while game_thread:
+			button_defult = m.getch()[0]
+	else: 
+		while game_thread:
+			button_defult = input("Нажмите кнопку перемещения: ")
 
 def move():	
 	global x, y, game_thread, button_defult, icon_player
