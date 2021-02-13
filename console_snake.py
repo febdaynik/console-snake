@@ -138,7 +138,7 @@ def main():
 
 def menu():
 	clear()
-	print("Хех, это консольная змейка | Автор: feb\n\n\t\t1 - Играть\n\t\t2 - Рейтинговая таблица (в разработке)\n\t\t3 - Выход")
+	print("Хех, это консольная змейка | Автор: feb\n\n\t\t1 - Играть\n\t\t2 - Рейтинговая таблица\n\t\t3 - Выход")
 	if os.getenv("OS") in ["Windows_NT","Linux"]:
 		btn = m.getch()[0]
 	else: 
@@ -146,7 +146,8 @@ def menu():
 	if btn in ["1", 49]:
 		main()
 	elif btn in ["2", 50]:
-		pass
+		import webbrowser
+		webbrowser.open('https://febdaynik.github.io/frontend-console-snake/')
 	elif btn in ["3", 51]:
 		exit()
 
