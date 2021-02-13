@@ -27,7 +27,7 @@ api = Api()
 def clear():
 	if os.getenv("OS") == "Windows_NT":
 		os.system("cls")
-	elif os.getenv("OS") in [None,"Linux"]
+	elif os.getenv("OS") in [None,"Linux"]:
 		os.system("clear")
 
 def record(score: int):
