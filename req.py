@@ -3,7 +3,7 @@ import requests, json
 class Api:
 
 	def __init__(self):
-		self.url = "http://127.0.0.1:8000/"
+		self.url = "http://febday.pythonanywhere.com/"
 		self.username = "admin"
 		self.password = "12223admin"
 
