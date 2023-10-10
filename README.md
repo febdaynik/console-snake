@@ -9,3 +9,6 @@
 ## Видео представление игрушки
 
 <video width="630" height="300" src="https://github.com/febdaynik/console-snake/assets/56220259/f7df8ec8-7d53-4626-b024-450edbbe294f"></video>
+
+
+ps: Все баги игры можно увидеть на видосе xD
